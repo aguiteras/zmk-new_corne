@@ -10,8 +10,13 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-//new includes for unicode chars
+//new includes and defines for unicode chars
 //----------------------------------------------------//
+//for linux
+//#define HOST_OS 1
+//for mac
+#define HOST_OS 2
+
 
 #include "zmk-helpers/helper.h"
 
