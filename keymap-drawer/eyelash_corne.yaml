@@ -238,7 +238,7 @@ layers:
   - KP 3
   - KP ASTERISK
   - '%'
-  - '&uc UC_SET_WIN_HEX'
+  - '&uc UC_SET_WIN_ALT'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
