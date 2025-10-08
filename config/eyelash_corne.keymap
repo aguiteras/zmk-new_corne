@@ -21,7 +21,7 @@
 
 // Source unicode-chars for desired languages
 
-#include "config/catalan.dtsi"
+#include "catalan.dtsi"
 #include "zmk-helpers/unicode-chars/currency.dtsi"
 
 //----------------------------------------------------//
@@ -148,7 +148,7 @@
             sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
         };
 
-        ca_accents {
+        layer_5 {
             display-name = "ACCENT"
             bindings = <
 &trans  &trans        &trans        &ca_e_grave   &ca_e_acut  &trans                    &trans          &trans      &ca_u_acute     &ca_i_acute &ca_o_grave &ca_o_acute &trans
