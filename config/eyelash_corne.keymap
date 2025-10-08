@@ -18,8 +18,7 @@
 #include "zmk-helpers/key-labels/eyelash42.h"
 
 // Source unicode-chars for desired languages
-#include "zmk-helpers/unicode-chars/spanish.dtsi"
-#include "zmk-helpers/unicode-chars/french.dtsi"
+#include "catalan.dtsi"
 //----------------------------------------------------//
 //end of includes for unicode chars
 
