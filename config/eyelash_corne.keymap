@@ -19,6 +19,7 @@
 
 // Source unicode-chars for desired languages
 #include "catalan.dtsi"
+#include "zmk-helpers/unicode-chars/currency.dtsi"
 //----------------------------------------------------//
 //end of includes for unicode chars
 
