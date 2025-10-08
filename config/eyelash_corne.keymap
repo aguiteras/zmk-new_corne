@@ -17,7 +17,7 @@
 
 // Source desired key-position labels
 
-#include "zmk-helpers/key-labels/eyelash42.h"
+//#include "zmk-helpers/key-labels/eyelash42.h"
 
 // Source unicode-chars for desired languages
 
