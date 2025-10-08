@@ -149,7 +149,7 @@
         };
 
         layer_5 {
-            display-name = "ACCENT"
+            display-name = "ACCENT";
             bindings = <
 &trans  &trans        &trans        &ca_e_grave   &ca_e_acut  &trans                    &trans          &trans      &ca_u_acute     &ca_i_acute &ca_o_grave &ca_o_acute &trans
 &trans  &ca_a_grave   &ca_a_acute   &trans        &trans      &trans            &trans  &trans  &trans  &trans      &ca_u_diaeresis &trans      &trans      &trans      &trans
