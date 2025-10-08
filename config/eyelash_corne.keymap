@@ -15,7 +15,7 @@
 //for linux
 //#define HOST_OS 1
 //for mac
-//#define HOST_OS 2
+#define HOST_OS 2
 
 //include unicode dtsi for zmk-unicode
 // keymap.keymap
