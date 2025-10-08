@@ -15,8 +15,11 @@
 //for linux
 //#define HOST_OS 1
 //for mac
-#define HOST_OS 2
+//#define HOST_OS 2
 
+//include unicode dtsi for zmk-unicode
+// keymap.keymap
+#include <behaviors/unicode.dtsi>
 
 #include "zmk-helpers/helper.h"
 
@@ -52,6 +55,13 @@
 
 / {
     behaviors {
+        uc: uc {
+            compatible = "zmk,behavior-unicode";
+            label = "Unicode";
+            // Boot default (no #define needed)
+            default-mode = <UC_MODE_MACOS>;   // or UC_MODE_LINUX / UC_MODE_WIN_COMPOSE / UC_MODE_WIN_HEX
+        };
+
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "ESC/Caps Lock Tap Dance";
@@ -144,9 +154,9 @@
         layer_4 {
             display-name = "NUMPAD";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_DIVIDE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp KP_EQUAL   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK  &kp PERCENT    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_DIVIDE  &uc UC_SET_MACOS
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp KP_EQUAL   &uc UC_SET_LINUX 
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK  &kp PERCENT    &uc UC_SET_WIN_HEX
                         &trans  &trans  &trans                                    &trans           &kp KP_NUMBER_0  &trans
             >;
 
