@@ -17,7 +17,7 @@
 
 // Source desired key-position labels
 
-//#include "zmk-helpers/key-labels/eyelash42.h"
+#include "zmk-helpers/key-labels/eyelash42.h"
 
 // Source unicode-chars for desired languages
 
@@ -156,6 +156,8 @@
 &trans  &trans        &trans        &ca_c_cedilla &trans      &trans  &trans            &trans          &es_n_tilde &trans          &trans      &trans      &trans      &trans
                                     &trans        &trans      &trans                                    &trans      &trans          &trans
             >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
