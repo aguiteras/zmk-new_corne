@@ -12,14 +12,18 @@
 
 //new includes for unicode chars
 //----------------------------------------------------//
+
 #include "zmk-helpers/helper.h"
 
 // Source desired key-position labels
+
 #include "zmk-helpers/key-labels/eyelash42.h"
 
 // Source unicode-chars for desired languages
+
 #include "catalan.dtsi"
 #include "zmk-helpers/unicode-chars/currency.dtsi"
+
 //----------------------------------------------------//
 //end of includes for unicode chars
 
@@ -133,15 +137,24 @@
         };
 
         layer_4 {
-            display-name = "NUMPAD"
+            display-name = "NUMPAD";
             bindings = <
-&trans     &trans  &trans  &trans  &trans  &trans                    &trans          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_DIVIDE  &trans
-&trans     &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp KP_EQUAL   &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK  &kp PERCENT    &trans
-                           &trans  &trans  &trans                                    &trans           &kp KP_NUMBER_0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_DIVIDE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS     &kp KP_EQUAL   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK  &kp PERCENT    &trans
+                        &trans  &trans  &trans                                    &trans           &kp KP_NUMBER_0  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_ZOOM_IN C_AC_ZOOM_OUT>;
+        };
+
+        ca_accents {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
