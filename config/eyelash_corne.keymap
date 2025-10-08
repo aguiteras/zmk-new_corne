@@ -10,6 +10,19 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
+//new includes for unicode chars
+//----------------------------------------------------//
+#include "zmk-helpers/helper.h"
+
+// Source desired key-position labels
+#include "zmk-helpers/key-labels/eyelash42.h"
+
+// Source unicode-chars for desired languages
+#include "zmk-helpers/unicode-chars/spanish.dtsi"
+#include "zmk-helpers/unicode-chars/french.dtsi"
+//----------------------------------------------------//
+//end of includes for unicode chars
+
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
