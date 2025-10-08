@@ -32,6 +32,9 @@
 #include "catalan.dtsi"
 #include "zmk-helpers/unicode-chars/currency.dtsi"
 
+&uc {
+  default-mode = <UC_MODE_MACOS>;  // Replace with desired input system.
+};
 //----------------------------------------------------//
 //end of includes for unicode chars
 
@@ -55,13 +58,6 @@
 
 / {
     behaviors {
-        uc: uc {
-            compatible = "zmk,behavior-unicode";
-            label = "Unicode";
-            // Boot default (no #define needed)
-            default-mode = <UC_MODE_MACOS>;   // or UC_MODE_LINUX / UC_MODE_WIN_COMPOSE / UC_MODE_WIN_HEX
-        };
-
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "ESC/Caps Lock Tap Dance";
