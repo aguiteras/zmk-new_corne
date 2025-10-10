@@ -209,7 +209,7 @@ layers:
   - KP 9
   - KP PLUS
   - KP DIVIDE
-  - '&uc UC_SET_MACOS'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -224,7 +224,7 @@ layers:
   - KP 6
   - KP MINUS
   - KP EQUAL
-  - '&uc UC_SET_LINUX'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -238,7 +238,7 @@ layers:
   - KP 3
   - KP ASTERISK
   - '%'
-  - '&uc UC_SET_WIN_ALT'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
