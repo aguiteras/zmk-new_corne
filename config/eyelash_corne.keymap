@@ -75,7 +75,7 @@
         tap_pref: tap_pref {
             compatible = "zmk,behavior-hold-tap";
             label = "tap preffered";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
 
             // Make taps win more often
             flavor = "tap-preferred";
@@ -86,11 +86,10 @@
             // Give you a little forgiveness for quick repeats
             quick-tap-ms = <200>;
 
-            // Don't auto-switch to hold just because you brushed another key
-            hold-trigger-on-other-key-press = <0>;
-
-            // If you release without actually chording, treat as TAP
-            retro-tap = <1>;
+            // Booleans: present = enabled
+            // We want retro-tap ON, but we want to keep
+            // "hold-trigger-on-other-key-press" OFF → just omit it.
+            retro-tap;
 
             // Hold = Shift, Tap = Apostrophe
             bindings = <&kp &kp>;
