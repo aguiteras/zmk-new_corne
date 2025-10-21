@@ -72,9 +72,9 @@
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp LSHIFT>;
         };
-        mt_shift_sqt: mt_shift_sqt {
+        tap_pref: tap_pref {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT SFT '";
+            label = "tap preffered";
             #binding-cells = <0>;
 
             // Make taps win more often
@@ -93,7 +93,9 @@
             retro-tap = <1>;
 
             // Hold = Shift, Tap = Apostrophe
-            bindings = <&kp RSHIFT &kp SQT>;
+            bindings = <&kp &kp>;
+            hold-trigger-key-positions = <>;
+            hold-tap-key-positions = <>;
         };
     };
 
@@ -127,7 +129,7 @@
             display-name = "QWERTY";
             bindings = <
 &td0            &kp Q  &kp W  &kp E     &kp R  &kp T                                &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &mt_shift_sqt
+&mt LSHIFT TAB  &kp A  &kp S  &kp D     &kp F  &kp G                      &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &tap_pref RSHIFT SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B        &kp C_MUTE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &lt 5 ENTER
                               &kp LGUI  &mo 1  &lt 4 SPACE                                                &lt 3 ENTER  &mo 2  &kp RALT
             >;
