@@ -87,10 +87,10 @@
             quick-tap-ms = <200>;
 
             // Don't auto-switch to hold just because you brushed another key
-            hold-trigger-on-other-key-press = <false>;
+            hold-trigger-on-other-key-press = <0>;
 
             // If you release without actually chording, treat as TAP
-            retro-tap = <true>;
+            retro-tap = <1>;
 
             // Hold = Shift, Tap = Apostrophe
             bindings = <&kp RSHIFT>, <&kp SQT>;
