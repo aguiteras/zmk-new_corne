@@ -93,7 +93,7 @@
             retro-tap = <1>;
 
             // Hold = Shift, Tap = Apostrophe
-            bindings = <&kp RSHIFT>, <&kp SQT>;
+            bindings = <&kp RSHIFT &kp SQT>;
         };
     };
 
