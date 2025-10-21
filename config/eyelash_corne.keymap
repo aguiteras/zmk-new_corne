@@ -93,8 +93,6 @@
 
             // Hold = Shift, Tap = Apostrophe
             bindings = <&kp &kp>;
-            hold-trigger-key-positions = <>;
-            hold-tap-key-positions = <>;
         };
     };
 
